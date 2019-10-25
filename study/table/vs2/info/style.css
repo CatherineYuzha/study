@@ -1,0 +1,27 @@
+:root {
+
+}
+
+td:hover {
+    background-color: bisque;
+}
+
+.grey {
+    background-color: #d6d6d6;
+}
+
+.green {
+    background-color: #c0edcd;
+}
+
+table {
+    border: 1px solid black;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+    border: 1px solid black;
+}
