@@ -4,7 +4,7 @@ td {
     border: 1px solid black;
 }
 
-.table__column_color1 {
+.table__row_color_grey {
     background-color: #d6d6d6;
 }
 
@@ -21,7 +21,7 @@ body {
     counter-reset: num;
 }
 
-.table__string_counter::after {
+.table__column_counter::after {
     counter-increment: num;
     content: counter(num);
 }
@@ -29,13 +29,13 @@ body {
 
 /* Зеленый фон четных строк */
 
-.table__column_color:nth-child(odd) {
+.table__row_color_green:nth-child(odd) {
     background: #c0edcd;
 }
 
 
 /* Эффект при наведении */
 
-.table__column_hover:hover {
+.table__row_hover:hover {
     background-color: bisque;
 }
