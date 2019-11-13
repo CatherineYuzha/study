@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <p>Регистрация пользователя в системе</p>
+        <p>* поля обязательные для заполнения</p>
+        <fieldset class="general" >
+            <legend> Общее </legend>
+            <p>
+                <label for="Name">Имя <em>*</em> </label>
+                <input type="text" id="Name" name="Name" placeholder="Имя">
+            </p>
+            <p>
+                <label for="Surname">Фамилия <em>*</em> </label>
+                <input type="text" id="Surname" name="Surname" placeholder="Фамилия">
+            </p>
+            <p><label for="Patronymic">Отчество </label>
+                <input type="text" id="Patronymic" name="Patronymic" placeholder="Отчество">
+            </p>
+            <p>
+                <label for="DateOfBirth">Дата рождения <em>*</em> </label>
+                <input type="date" id="DateOfBirth" name="DateOfBirth">
+            </p>
+            <p>
+                <label for="gender">Пол </label>
+                <input type="radio" value="male" name="gender" id="gender"> Мужской |
+                <input type="radio" value="female" name="gender" id="gender"> Женский
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> Контакты </legend>
+            <p>
+                <label for="address">Адрес </label>
+                <input type="text" id="address" name="address" placeholder="Адрес проживания">
+                <input type="submit" value="+">
+            </p>
+            <p>
+                <label for="Phone">Телефон <em>*</em> </label>
+                <input type="tel" id="Phone" name="Phone" placeholder="Телефон" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
+                <input type="submit" value="+">
+            </p>
+            <p>
+                <label for="Email">E-mail <em>*</em></label>
+                <input type="Email" id="Email" name="Email" placeholder="Электронная почта">
+                <input type="submit" value="+">
+            </p>
+            <p>
+                <label for="Skype">Skype <em>*</em> </label>
+                <input type="text" id="Skype" name="Skype" placeholder="Логин">
+                <input type="submit" value="+">
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> Образование <input type="submit" value="+"></legend>
+            <p>
+                <label for="Education">Учебное заведение </label>
+                <input type="text" id="Education" name="Education" placeholder="Учебное заведение">
+            </p>
+            <p>
+                <label for="Specialty">Специальность </label>
+                <input type="text" id="Specialty" name="Specialty" placeholder="Специальность">
+            </p>
+            <p>
+                <label for="Power">Степень </label>
+                <select id="Power" name="Power">
+                    <option disabled selected>Степень</option>
+                    <option value="GeneralEd">Основное общее образование </option>
+                    <option value="SecondaryEd">Среднее (полное) общее образование </option>
+                    <option value="PrimaryVocationalEd;">Начальное профессиональное образование </option>
+                    <option value="SecondaryVocationalEd;">Среднее профессиональное образование </option>
+                    <option value="HigherProfessionalEd;">Высшее профессиональное образование </option>
+                    <option value="PostgraduateProfessionalEd.">Послевузовское профессиональное образование </option>
+                </select>
+            </p>
+            <p>
+                <label for="Year">Годы обучения <em>*</em> </label>
+                <input type="number" id="Year" name="Year" placeholder="2014" min="1900" max="2500" step="10"> - <input type="number" id="Year" name="Year" placeholder="2018" min="1900" max="2500" step="10">
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend> Семья </legend>
+            <p>
+                <label for="Family">Семейное положение</label>
+                <select id="Family" name="Family">
+                    <option disabled selected>Семейное положение </option>
+                    <option value="Married">Женат / Замужем</option>
+                    <option value="Unmarried">Не женат / Не замужем</option>
+                </select></p>
+            <p>
+                <label for="Child">Детей до 14</label>
+                <input type="number" min="0" max="10" step="1" placeholder="0" id="Child" name="Child">
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Работа</legend>
+            <p>
+                <label for="IP">IP-адрес<em>*</em></label>
+                <input type="text" name="IP" id="IP" placeholder="IP-адрес компьютера">
+            </p>
+            <p>
+                <label for="Login">Логин <em>*</em></label>
+                <input type="text" name="Login" id="Login" placeholder="Логин">
+            </p>
+            <p>
+                <label for="Password">Пароль<em>*</em></label>
+                <input type="password" name="Password" id="Password" placeholder="Пароль">
+            </p>
+            <p>
+                <label for="Reception">Дата приема <em>*</em></label>
+                <input type="text" placeholder="Дата приема на работу" name="Reception" id="Reception">
+            </p>
+            <p>
+                <label for="MainSpecialty">Основная специальность</label>
+                <input type="search" name="MainSpecialty" id="MainSpecialty" placeholder="Основная специальность">
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Дополнительно</legend>
+            <p>
+                <label for="Web-site">Личный веб-сайт</label>
+                <input type="text" name="Web-site" id="Web-site" placeholder="Сайт">
+            </p>
+            <p>
+                <label for="Foto">Фотография</label>
+                <input type="file" id="Foto" name="Foto" placeholder="Выберите файл">
+            </p>
+            <p>
+                <label for="AboutMe">О себе</label>
+                <textarea id="AboutMe" name="AboutMe" rows="5" cols="30"></textarea>
+            </p>
+            <p>
+                <label for="Interests">Интересы</label>
+                <input type="search" name="Interests" id="Interests" placeholder="Интересы">
+            </p>
+        </fieldset>
+        <br>
+        <input type="checkbox" value="1" id="consent">
+        <label for="consent">Согласен на обработку данных</label>
+        <input type="submit" value="Сохранить">
+    </form>
+</body>
+
+</html>
