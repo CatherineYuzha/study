@@ -4,10 +4,6 @@ td {
     border: 1px solid black;
 }
 
-.table__row_color_grey {
-    background-color: #d6d6d6;
-}
-
 .table {
     border: 1px solid black;
     width: 70%;
@@ -29,13 +25,25 @@ body {
 
 /* Зеленый фон четных строк */
 
-.table__row_color_green:nth-child(odd) {
+.table__row:nth-child(odd) {
     background: #c0edcd;
 }
 
 
 /* Эффект при наведении */
 
-.table__row_hover:hover {
+.table__row:hover {
+    background-color: bisque;
+}
+
+.table__row_color_readonly {
+    background-color: #d6d6d6!important;
+}
+
+.table__row_color_readonly:hover {
+    background-color: bisque!important;
+}
+
+.table__group_hover:hover {
     background-color: bisque;
 }
