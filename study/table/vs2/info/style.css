@@ -44,6 +44,6 @@ body {
     background-color: bisque!important;
 }
 
-.table__group_hover:hover {
+.table__group:hover {
     background-color: bisque;
 }
