@@ -25,24 +25,20 @@ body {
 
 /* Зеленый фон четных строк */
 
-.table__row:nth-child(odd) {
+.table__row:not(.table__row_filled_color):nth-child(odd) {
     background: #c0edcd;
 }
 
 
 /* Эффект при наведении */
 
-.table__row:hover {
+.table__row:not(.table__row_filled_color):hover {
     background-color: bisque;
 }
 
-.table__row_readonly {
-    background-color: #d6d6d6 !important;
+.table__row_filled_color {
+    background-color: #d6d6d6;
     user-select: none;
-}
-
-.table__row_readonly:hover {
-    background-color: bisque !important;
 }
 
 .table__group:hover {
