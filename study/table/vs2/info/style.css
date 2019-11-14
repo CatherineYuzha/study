@@ -36,11 +36,11 @@ body {
     background-color: bisque;
 }
 
-.table__row_color_readonly {
+.table__row_readonly {
     background-color: #d6d6d6!important;
 }
 
-.table__row_color_readonly:hover {
+.table__row_readonly:hover {
     background-color: bisque!important;
 }
 
