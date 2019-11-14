@@ -37,11 +37,12 @@ body {
 }
 
 .table__row_readonly {
-    background-color: #d6d6d6!important;
+    background-color: #d6d6d6 !important;
+    user-select: none;
 }
 
 .table__row_readonly:hover {
-    background-color: bisque!important;
+    background-color: bisque !important;
 }
 
 .table__group:hover {
