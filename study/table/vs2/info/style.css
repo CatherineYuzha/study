@@ -1,27 +1,46 @@
-:root {
-
+th,
+td {
+    padding: 5px;
+    border: 1px solid black;
 }
 
-td:hover {
-    background-color: bisque;
-}
-
-.grey {
-    background-color: #d6d6d6;
-}
-
-.green {
-    background-color: #c0edcd;
-}
-
-table {
+.table {
     border: 1px solid black;
     width: 70%;
     border-collapse: collapse;
 }
 
-th,
-td {
-    padding: 5px;
-    border: 1px solid black;
+
+/* Счетчик */
+
+body {
+    counter-reset: num;
+}
+
+.table__column_counter::after {
+    counter-increment: num;
+    content: counter(num);
+}
+
+
+/* Зеленый фон четных строк */
+
+.table__row:not(.table__row_filled):nth-child(odd) {
+    background: #c0edcd;
+}
+
+
+/* Эффект при наведении */
+
+.table__row:not(.table__row_filled):hover {
+    background-color: bisque;
+}
+
+.table__row_filled {
+    background-color: #d6d6d6;
+    user-select: none;
+}
+
+.table__group:hover {
+    background-color: bisque;
 }
